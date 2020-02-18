@@ -19,7 +19,7 @@
         xhr.open('POST',url);
         // xhr.open('GET',url);
 
-        xhr.onload = () => resolve(xhr);
+        xhr.onload = () => resolve(xhr.responseText);
         xhr.onerror = () => reject(new Error('Error!!!!!'));
 
         xhr.setRequestHeader("Content-Type", "application/json");
