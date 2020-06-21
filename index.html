@@ -4,36 +4,271 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My CV</title>
+  <title>Resume - Denys Bielishev</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Резюме</h1>
-  </header>
+  <div class="wrap">
+    <div class="top"></div>
+    <header class="header">
+      <div class="header-content row">
+        <div class="header__photo row__left">
+          <img src="img/denys_bielishev.jpg" alt="photo Denys Bielishev">
+        </div>
+        <section class="row__right">
+          <h1 class="header__title">Denys Bielishev</h1>
+          <h2 class="header__subtitle">Front-end web developer</h2>
+        </section>
+      </div>
+    </header>
 
-  <script type="text/javascript">
-    function loadScript(url, data = {}) {
-      return new Promise(function(resolve, reject) {
-        let div = document.createElement('div');
-        let xhr = new XMLHttpRequest();
-        xhr.open('POST',url);
-        // xhr.open('GET',url);
+    <main class="main">
+      <div class="row">
+        <aside class="aside row__left">
+          <section class="aside-block">
+            <h3 class="aside__title">About me</h3>
+            <ul class="aside-block__list">
+              <li>Date of Birth: January 13, 1985</li>
+              <li>Birth place: Moscow, Russian Federation</li>
+              <li>Age: <span class="year"></span></li>
+              <li>Gender: Male</li>
+            </ul>
+          </section>
 
-        xhr.onload = () => resolve(xhr.responseText);
-        xhr.onerror = () => reject(new Error('Error!!!!!'));
+          <section class="aside-block contact">
+            <h3 class="aside__title">Contacts</h3>
+            <ul class="aside-block__list">
+              <li>
+                <svg class="icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
+                </svg>
+                <span>250V Moskovsky Ave. Kharkov, Ukraine, 61099</span>
+              </li>
+              <li>
+                <a href="mailto:niskadevla@gmail.com">
+                  <svg class="icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path>
+                  </svg>
+                  <span>niskadevla@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+380994977490">
+                  <svg class="icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path>
+                  </svg>
+                  +(380)-99-49-77-490
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/niskadevla">
+                  <svg class="icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                    <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                  </svg>
+                  <span>https://github.com/niskadevla</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/people/Denis-Beliesev/100026991728378">
+                  <svg class="icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                  </svg>
+                  <span>https://www.facebook.com/people/Denis-Beliesev/100026991728378</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/denys-bielishev-3a7094182">
+                  <svg class="icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                  </svg>
+                  <span>https://www.linkedin.com/in/denys-bielishev-3a7094182</span>
+                </a>
+              </li>
+            </ul>
+          </section>
 
-        xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.send(JSON.stringify(data));
+          <section class="aside-block languages">
+            <h3 class="aside__title">Languages</h3>
+            <ul class="aside-block__list">
+              <li>
+                <img src="img/Russia.png" alt="country">
+                <span>Russian (native)</span>
+              </li>
+              <li>
+                <img src="img/Ukraine.png" alt="country">
+                <span>Ukrainian(strong)</span>
+              </li>
+              <li>
+                <img src="img/United-States.png" alt="country">
+                <span>English (intermediate)</span>
+              </li>
+            </ul>
+          </section>
 
-        document.head.append(div);
-      });
-    }
+          <section class="aside-block">
+            <h3 class="aside__title">Hobbies</h3>
+            <ul class="aside-block__list">
+              <li>Coding, educational YouTube channels, books, traveling, swimming</li>
+            </ul>
+          </section>
+        </aside>
+        <article class="content row__right">
+          <section class="content-block">
+            <h3 class="content__title">Job Objective</h3>
+            <p class="content__text">
+              Looking for a position as Front-End web developer that allows me to use my abilities to enhance and grow with the company
+            </p>
+          </section>
 
-    let promise =  loadScript('data2.json',{state: true});
+          <section class="content-block">
+            <h3 class="content__title">Education</h3>
+            <div class="content__text">
+              <ul class="content-block__list">
+                <li><b>2020</b> Graduated online and offline training at Epam</li>
+                <li><b>2018</b> Graduated online course at freeCodeCamp by JavaScript</li>
+                <li>
+                  <b>2017</b> to present. Self-education in the field of web technologies:
+                  <ul>
+                    <li>
+                      <strong>Web Sources:</strong>
+                      <ul>
+                        <li>https://learn.javascript.ru/; http://htmlbook.ru/;</li>
+                        <li>YouTube channels, https://github.com/;</li>
+                        <li>https://developer.mozilla.org/; https://stackoverflow.com/ etc.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong>Books:</strong>
+                      <ul>
+                        <li>CSS Pocket Reference, Eric A.Meyer;</li>
+                        <li>Head First HTML and CSS, Eric Freeman , Elisabeth Robson;</li>
+                        <li>CSS in Depth, Keith J. Grant;</li>
+                        <li>Learning React functional web development with React and Redux,
+                        Alex Banks and Eve Porcello</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <b>2008</b>
+                  Master’s Degree in Cryogenic Technique and Technology.
+                  National Technical University “Kharkiv Polytechnic Institute”.
+                </li>
+                <li>
+                  <b>2006</b>
+                  Bachelor’s Degree in Power engineering. NTU “KhPI”.
+                </li>
+              </ul>
+            </div>
+          </section>
 
-    promise.
-    then(text => console.log(text)).
-    catch(error => console.log(error));
-  </script>
+          <section class="content-block">
+            <h3 class="content__title">Working Experience</h3>
+            <div class="content__text">
+              <ul class="content-block__list">
+                <li>
+                  <b>Co-founder</b> 2009 to present. “Infolio” copy center (typography)
+                  <ul>
+                    <li>created and supported a web site;</li>
+                    <li>wrote scripts for programs;</li>
+                    <li>serve and support customers;</li>
+                    <li>work with office, graphic and engineering software;</li>
+                    <li>work with office equipment;</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Freelancer</b> 2018. https://freelance.ru/niskadevla
+                  <ul>
+                    <li>created web sites, landings</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>System programmer</b> 2008 -2009. “Maxus” Company
+                  <ul>
+                    <li>supported network, computers, office equipment, etc.</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>System administrator</b> 2006 -2008 “Compass” Internet club
+                  <ul>
+                    <li>serviced and consulted customers,  supported network and computers</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="content-block">
+            <h3 class="content__title">Technical proficiencies</h3>
+            <div class="content__text">
+              <ul class="content-block__list">
+                <li>Wide experience: JavaScript (ES5, ES6, ES7+), HTML 5, CSS 3</li>
+                <li>Strong knowledge: : AJAX, Bootstrap 4, jQuery, SCSS</li>
+                <li>Familiar with: Git, Webpack, React, Babel, Node, npm, Pascal</li>
+                <li>Profound knowledge in: Photoshop, CorelDraw, DOS, Windows, Linux,
+                  computer equipment, computer network.
+                </li>
+                <li>
+                  Familiar with: MathCad, Compass, Autocad, Adobe Acrobat
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="content-block">
+            <h3 class="content__title">Soft skills</h3>
+            <p class="content__text">
+              Multitask, time management, ability to work under pressure,
+              decision making, problem solving, self-motivated, quick-learner
+            </p>
+          </section>
+
+          <section class="content-block projects">
+            <h3 class="content__title">Projects</h3>
+            <div class="content__text">
+              <ul class="content-block__list">
+                <li>
+                  e-Commerce store:
+                  <a href="http://shop.infolio.top/">http://shop.infolio.top/</a>
+                </li>
+                <li>
+                  Web site:
+                  <a href="http://testwork.webakula.com.ua/2019-09/niskadeva/project/index.html">
+                    http://testwork.webakula.com.ua/2019-09/niskadeva/project/index.html
+                  </a>
+                </li>
+                <li>
+                  Web site and calculator:
+                  <a href="http://infolio.top/">http://infolio.top/</a>
+                </li>
+                <li>
+                  Landing:
+                  <a href="https://eaglepay.io/">https://eaglepay.io/</a>
+                </li>
+                <li>
+                  Landing:
+                  <a href="http://www.borneofirst.com">http://www.borneofirst.com</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </article>
+      </div>
+    </main>
+
+
+
+    <!-- <footer class="footer">
+      <div class="container">
+        <p class="all-rights">
+          &copy; <span class="year"></span> Resume. All Right Reserved
+        </p>
+      </div>
+    </footer> -->
+
+    <script type="text/javascript">
+      document.querySelector('.year').textContent = new Date().getFullYear() - 1985;
+    </script>
+  </div>
 </body>
 </html>
