@@ -35,6 +35,15 @@ html {
   color: #555;
 }
 
+a {
+  color: #555;
+}
+
+a:hover,
+a:active {
+  color: #333;
+}
+
 body {
   min-height: 100vh;
   padding: 4rem 0;
