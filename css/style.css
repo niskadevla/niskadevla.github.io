@@ -57,12 +57,9 @@ body {
 .wrap {
   max-width: 900px;
   margin: 0 auto;
+  padding-top: 1rem;
   background: linear-gradient(to right, #333 30%, #efefef 30%);
   box-shadow: 10px 10px 20px 4px rgba(80, 80, 80, 0.5);
-}
-
-.top {
-  min-height: 1px;
 }
 
 .row {
