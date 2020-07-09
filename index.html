@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Resume - Denys Bielishev</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 </head>
 <body>
   <div class="wrap">
@@ -164,6 +165,28 @@
             </div>
           </section>
 
+          <section class="content-block ">
+            <h3 class="content__title">Certificates</h3>
+            <div class="content__assets">
+              <figure>
+                <img src="./img/programming_thumb.jpg" alt="Belieshev Denys certificate">
+                <figcaption>Programming basics. Beginner</figcaption>
+              </figure>
+              <figure>
+                <img src="./img/js_beginner_en_thumb.jpg" alt="Belieshev Denys certificate">
+                <figcaption>JavaScript. Beginner</figcaption>
+              </figure>
+              <figure>
+                <img src="./img/js_midle_en_thumb.jpg" alt="Belieshev Denys certificate">
+                <figcaption>JavaScript. Intermediate level</figcaption>
+              </figure>
+              <figure>
+                <img src="./img/english_pre_intermediate_thumb.jpg" alt="Belieshev Denys certificate">
+                <figcaption>English language. Pre-intermediate</figcaption>
+              </figure>
+            </div>
+          </section>
+
           <section class="content-block">
             <h3 class="content__title">Working Experience</h3>
             <div class="content__text">
@@ -204,7 +227,29 @@
             <h3 class="content__title">Technical proficiencies</h3>
             <div class="content__text">
               <ul class="content-block__list">
-                <li>Wide experience: JavaScript (ES5, ES6, ES7+), HTML 5, CSS 3</li>
+                <li>Wide experience:</li>
+                <li>
+                  <ul>
+                    <li>
+                      HTML 5
+                      <meter class="experience-measure" value="93" low="0" max="100">
+                        <div class="experience-measure__value"></div>
+                      </meter>
+                    </li>
+                    <li>
+                      CSS 3
+                      <meter class="experience-measure" value="89" low="0" max="100">
+                        <div class="experience-measure__value"></div>
+                      </meter>
+                    </li>
+                    <li>
+                      JavaScript (ES5, ES6, ES7+)
+                      <meter class="experience-measure" value="83" low="0" max="100">
+                        <div class="experience-measure__value"></div>
+                      </meter>
+                    </li>
+                  </ul>
+                </li>
                 <li>Strong knowledge: : AJAX, React, SCSS</li>
                 <li>Familiar with: Git, Bootstrap 4, jQuery, Webpack, Babel, Node, npm, Pascal</li>
                 <li>Profound knowledge in: Photoshop, CorelDraw, DOS, Windows, Linux,
@@ -271,6 +316,7 @@
     <script type="text/javascript">
       document.querySelector('.year').textContent = new Date().getFullYear() - 1985;
     </script>
+    <script src="./js/main.js"></script>
   </div>
 </body>
 </html>
