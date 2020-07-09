@@ -187,6 +187,16 @@ body {
    padding-top: 0.8rem;
 }
 
+.contact__link {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.contact__link::after {
+  content: attr(href);
+}
+
 .languages li {
   display: flex;
   align-items: center;
@@ -201,6 +211,7 @@ body {
   left: 1rem;
   bottom: 1rem;
 }
+
 
 
 
