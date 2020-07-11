@@ -4,7 +4,7 @@ const figures = document.querySelectorAll('.content__figure');
 
 const setExperienceMeasure = meter => {
   meter.querySelector('.experience-measure__value')
-    .style.width = meter.value + '%';
+    .style.width = meter.dataset.value + '%';
 }
 
 const setImgPosition = figure => figure.style.left = 0;

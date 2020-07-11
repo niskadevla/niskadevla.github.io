@@ -115,7 +115,7 @@
         </aside>
 
 
-        <article class="content row__right">
+        <div class="content row__right">
           <section class="content-block">
             <h3 class="content__title">Job Objective</h3>
             <p class="content__text">
@@ -232,21 +232,21 @@
                   <ul>
                     <li>
                       HTML 5
-                      <meter class="experience-measure" value="93" low="0" max="100">
+                      <div class="experience-measure" data-value="93">
                         <div class="experience-measure__value"></div>
-                      </meter>
+                      </div>
                     </li>
                     <li>
                       CSS 3
-                      <meter class="experience-measure" value="89" low="0" max="100">
+                      <div class="experience-measure" data-value="89">
                         <div class="experience-measure__value"></div>
-                      </meter>
+                      </div>
                     </li>
                     <li>
                       JavaScript (ES5, ES6, ES7+)
-                      <meter class="experience-measure" value="83" low="0" max="100">
+                      <div class="experience-measure" data-value="83">
                         <div class="experience-measure__value"></div>
-                      </meter>
+                      </div>
                     </li>
                   </ul>
                 </li>
@@ -299,7 +299,7 @@
               </ul>
             </div>
           </section>
-        </article>
+        </div>
       </div>
     </main>
 
@@ -313,7 +313,7 @@
       </div>
     </footer> -->
 
-    <script type="text/javascript">
+    <script>
       document.querySelector('.year').textContent = new Date().getFullYear() - 1985;
     </script>
     <script src="./js/main.js"></script>
