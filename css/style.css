@@ -211,7 +211,7 @@ body {
 
 .content__text {
   line-height: 1.5;
-  list-style-type: disc;  
+  list-style-type: disc;
 }
 
 .content-block + .content-block {
@@ -245,17 +245,17 @@ body {
   flex: 50%;
   top: 0;
   margin-bottom: 1rem;
-  -webkit-transition: .7s;
-  -o-transition: .7s;
-  transition: .7s;
+  -webkit-transition: left .5s ease-in;
+  -o-transition: left .5s ease-in;
+  transition: left .5s ease-in;
 }
 
 .content__figure:nth-child(n) {
-  left: -100%;
+  left: -50%;
 }
 
 .content__figure:nth-child(2n) {
-  left: 100%;
+  left: 50%;
 }
 
 .content__figure figcaption {
