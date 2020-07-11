@@ -1,11 +1,15 @@
 'use strict';
+const meters = document.querySelectorAll('.experience-measure');
+const figures = document.querySelectorAll('.content__figure');
 
-const setExperienceMeasure = (meter) => {
-  const meterValue = meter.querySelector('.experience-measure__value');
-  meterValue.style.width = meter.value + '%';
+const setExperienceMeasure = meter => {
+  meter.querySelector('.experience-measure__value')
+    .style.width = meter.value + '%';
 }
 
-function isVisible(elem) {
+const setImgPosition = figure => figure.style.left = 0;
+
+const isVisible = elem => {
   let coords = elem.getBoundingClientRect();
   let windowHeight = document.documentElement.clientHeight;
 
@@ -16,10 +20,16 @@ function isVisible(elem) {
   return topVisible || bottomVisible;
 }
 
-function showVisible() {
-  const meters = document.querySelectorAll('.experience-measure');
+const showVisibleExperienceMeasure = () => {
   meters.forEach(meter => isVisible(meter) && setExperienceMeasure(meter));
 }
 
-window.addEventListener('scroll', showVisible);
-showVisible();
+window.addEventListener('scroll', showVisibleExperienceMeasure);
+showVisibleExperienceMeasure();
+
+const showVisibleImg = () => {
+  figures.forEach(figure => isVisible(figure) && setImgPosition(figure));
+}
+
+window.addEventListener('scroll', showVisibleImg);
+showVisibleImg();
