@@ -240,9 +240,9 @@ body {
 
 .content__figure {
   position: relative;
-  -webkit-flex: 50%;
-  -ms-flex: 50%;
-  flex: 50%;
+  -webkit-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
   top: 0;
   margin-bottom: 1rem;
   -webkit-transition: left .5s ease-in;
@@ -354,8 +354,7 @@ body {
   }
 
   .aside-block:nth-child(4),
-  .content-block:nth-child(3),
-  .content-block:nth-child(5) {
+  .content-block:nth-child(3) {
     padding-top: 1rem;
     break-before: page;
   }
@@ -365,6 +364,6 @@ body {
   }
 
   .main {
-    padding-bottom: 12rem;
+    padding-bottom: 8rem;
   }
 }
