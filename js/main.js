@@ -2,12 +2,13 @@
 const meters = document.querySelectorAll('.progress');
 const figures = document.querySelectorAll('.content__figure');
 
-const setProgress = meter =>
+const setProgress = meter => {
     meter.children[0].style.width = meter.dataset.value + '%';
+}
 
 const setImgPosition = figure => {
   figure.style.left = 0;
-  figure.style.opacity = 1;  
+  figure.style.opacity = 1;
 }
 
 const isVisible = elem => {
