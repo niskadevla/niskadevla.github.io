@@ -378,7 +378,8 @@ body {
   }
 
   .aside-block:nth-child(4),
-  .content-block:nth-child(3) {
+  .content-block:nth-child(3),
+  .content-block:nth-child(4) {
     padding-top: 1rem;
     break-before: page;
   }
